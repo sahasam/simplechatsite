@@ -55,6 +55,17 @@ $('#btn-userName').on("click",function(){
 $("#btn-chat").on("click",function(){
     var messageText = $('#btn-input').val();
     publishText(messageText);
+    
+    // empty the input
+    $('#btn-input').val('');
+});
+
+//Add functionality to enter text through text box by clicking 'enter'
+$('#btn-input').keydown(function (event) {
+    var keypressed = event.keyCode || event.which;
+    if (keypressed == 13) {
+        $("#btn-chat").trigger('click');
+    }
 });
 
 //Publish text to pubnub
