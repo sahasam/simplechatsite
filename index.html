@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!--Link Bootstrap to Project-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Simple Chat Site</a>
+        </div>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Use a Username" style="margin-top: 10px;float:right">
+                <span class="input-group-btn">
+                    <button class="btn btn-warning btn-sm" id="btn-userName" style="margin-top:7px">Use Name</button>
+                </span>
+            </div>
+      </div>
+    </nav>
+    
+    <div id="content-wrapper" style="margin-top: 50px; ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-comment"></span> Chat
+                    </div>
+                    <div class="panel-body" style="height: 80vh;margin-top:8px" id="chat-box-area">
+                    
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                            <span class="input-group-btn">
+                                <button class="btn btn-warning btn-sm" id="btn-chat">
+                                    Send</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- JQuery -->    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     
+     <!-- Bootstrap js Functionality -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" cros    sorigin="anonymous"></script>
+     
+     <!-- PubNub -->
+     <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.1.1.js"></script>
+     
+     <script src="main.js"></script>
+</body>
+</html>
